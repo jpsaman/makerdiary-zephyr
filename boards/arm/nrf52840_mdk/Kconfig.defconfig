@@ -12,29 +12,37 @@ config BOARD
 if UART_NRFX
 
 config UART_0_NRF_TX_PIN
+	int
 	default 20
 
 config UART_0_NRF_RX_PIN
+	int
 	default 19
 
 config UART_0_NRF_RTS_PIN
+	int
 	default 5
 
 config UART_0_NRF_CTS_PIN
+	int
 	default 7
 
 if MODEM_WNCM14A2A
 
 config UART_1_NRF_TX_PIN
+	int
 	default 16
 
 config UART_1_NRF_RX_PIN
+	int
 	default 15
 
 config UART_1_NRF_RTS_PIN
+	int
 	default 14
 
 config UART_1_NRF_CTS_PIN
+	int
 	default 17
 
 endif # MODEM_WCN14A2A
