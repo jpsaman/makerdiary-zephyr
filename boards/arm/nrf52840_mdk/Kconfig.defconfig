@@ -66,4 +66,11 @@ config IEEE802154_NRF5
 
 endif # IEEE802154
 
+if ARM_MPU
+
+config ARM_MPU_NRF52X
+	def_bool y
+
+endif # ARM_MPU
+
 endif # BOARD_NRF52840_MDK
